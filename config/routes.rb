@@ -4,4 +4,10 @@ Rails.application.routes.draw do
 
   get '/actors' => 'actors#index'
   get '/actors/:id' => 'actors#show', as: :actor
+
+  get '/comments' => 'comments#index'
+  get '/comments/new' => 'comments#new'
+
+  post 'comments' => 'comments#create'
+
 end

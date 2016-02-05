@@ -59,3 +59,7 @@ m7.actors << [a20, a21, a22, a10]
 m8.actors << [a20, a9, a23, a24]
 m9.actors << [a5, a9, a29, a30]
 m10.actors << [a31, a27, a28, a2]
+
+m1 = Comment.create(content: "We're at the beach so you should meet us here! I make a mean sandcastle. :)")
+
+m2 = Comment.create(content: "Let's meet there!")

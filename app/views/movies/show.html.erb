@@ -11,6 +11,18 @@
       </div>
     </div>
 
+    <div>
+      <% @comments.each do |comment| %>
+      <div class="message">
+        <p class="content"><%= comment.content %></p>
+        <p class="time"><%= comment.created_at %></p>
+      </div>
+      <% end %>
+      
+      <%= link_to 'New Comment', "/comments/new" %>
+
+    </div>
+
     <h2>Cast</h2>
     <% @actors.each do |actor| %>
     <div class="actor">
