@@ -26,7 +26,7 @@ var TileSpace = {
     dims: {
       width: 162,
       height: 240,
-      spacing: 4
+      spacing: 15
     },
     columns: 15,
     rows: 13,
@@ -111,25 +111,103 @@ var Tile = function($id) {
   var bground = Math.floor(Math.random() * 100)
   // var clr2 = 0;
 
-  // if (clr<=360 && clr>=240){
-  // 	clr2 = 241;
-  // }
-  // else if (clr<240 && clr>=120){
-  // 	clr2 = 55;
-  // }
-  // else{
-  // 	clr2 = 0;
-  // }
+  if (bground<=100 && bground>95){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/oceans-11.jpg")'
+  	  });
+  }
+  else if (bground<=95 && bground>90){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/the-perfect-storm.jpg")'
+  	  });
+  }
+  else if (bground<=90 && bground>85){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/contagion.jpg")'
+  	  });
+  }
+  else if (bground<=85 && bground>80){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/the-departed.jpg")'
+  	  });
+  }
+  else if (bground<=80 && bground>75){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/inception.jpg")'
+  	  });
+  }
+  else if (bground<=75 && bground>70){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/dark-knight-rises.jpg")'
+  	  });
+  }
+  else if (bground<=70 && bground>65){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/iron-man.jpg")'
+  	  });
+  }
+  else if (bground<=65 && bground>60){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/sherlock-holmes.jpg")'
+  	  });
+  }
+  else if (bground<=60 && bground>55){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://ecx.images-amazon.com/images/I/917iZAoHaVL._SL1500_.jpg")'
+  	  });
+  }
+  else if (bground<=55 && bground>50){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg")'
+  	  });
+  }
+  else if (bground<=50 && bground>45){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg")'
+  	  });
+  }
+  else if (bground<=45 && bground>40){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://static.srcdn.com/slir/w786-h1179-q90-c786:1179/wp-content/uploads/Star-Wars-The-Force-Awakens-Movie-Poster.jpg")'
+  	  });
+  }
+  else if (bground<=40 && bground>35){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://www.movienewz.com/wp-content/uploads/2015/06/everest_movie_poster_2.jpg")'
+  	  });
+  }
+  else if (bground<=35 && bground>30){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://thesefantasticworlds.com/wp-content/uploads/2015/01/fantasic-four-2015-movie-poster.jpg")'
+  	  });
+  }
+  else if (bground<=30 && bground>25){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://madmovieman.com/wp-content/uploads/2015/10/Poster-Pixels.jpg")'
+  	  });
+  }
+  else if (bground<=25 && bground>20){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://www.theshiznit.co.uk/media/2015/January/truth2015/imitation-game-large.jpg")'
+  	  });
+  }
+  else if (bground<=20 && bground>15){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://www.printmag.com/wp-content/uploads/jupiter_ascending_ver3_xlg.jpg")'
+  	  });
+  }
+  else if (bground<=15 && bground>10){
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://www.movienewz.com/img/gallery/martian/posters/martian_movie_poster_1.jpg")'
+  	  });
+  }
+  else{
+  	$(_res.el).find('figure').css({
+  	    'background-image': 'url("http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/closer.jpg")'
+  	  });
+  }
 
-  // var _hsl = {
-  //   s: 70,
-  //   l: Math.floor(Math.random() * 100)
-  // };
 
-  $(_res.el).find('figure').css({
-    // 'background-color': 'hsl(' + 233 + ',' + _hsl.s + '%,' + _hsl.l + '%)'
-      //,'opacity': 0.5
-  });
 
   return _res;
 };
