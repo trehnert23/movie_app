@@ -5,6 +5,7 @@ class CreateMovies < ActiveRecord::Migration
       t.string :image
       t.string :release_year
       t.string :plot
+      t.string :review
       t.timestamps
     end
   end

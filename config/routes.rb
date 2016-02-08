@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
-  get '/movies' => 'movies#index'
-  get '/movies/:id' => 'movies#show', as: :movie
+	root to: 'welcome#index'
 
-  get '/actors' => 'actors#index'
-  get '/actors/:id' => 'actors#show', as: :actor
+	get '/movies' => 'movies#index'
+	get '/movies/:id' => 'movies#show', as: :movie
 
-  get '/comments' => 'comments#index'
-  get '/comments/new' => 'comments#new'
+	get '/actors' => 'actors#index'
+	get '/actors/:id' => 'actors#show', as: :actor
 
-  post 'comments' => 'comments#create'
+	get '/comments' => 'comments#index'
+	get '/comments/new' => 'comments#new'
+
+	post 'comments' => 'comments#create'
 
 end
