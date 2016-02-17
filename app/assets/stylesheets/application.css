@@ -249,25 +249,22 @@ h3 a {
  text-decoration: none;
 }
 
-.movie, .actor {
+.movie {
  display: block;
  float: left;
- margin: 0 10px 80px 0;
- margin-bottom: 80px;
+ margin: 0 10px 150px 0;
  width: 184px;
-}
-
-.actor {
- height: 350px;
-}
-
-.movie {
  height: 350px;
  font-family: Dosis;
 }
 
-.movie:nth-child(5n + 6), .actor:nth-child(5n + 6)  {
- margin: 0 0 80px 0;
+.actor {
+ display: block;
+ float: left;
+ margin: 0 10px 100px 0;
+ width: 184px;
+ height: 200px;
+ font-family: Dosis;
 }
 
 .movie img, .actor img {
@@ -295,6 +292,11 @@ p.year {
 .movie-show .movie img, .actor-show .actor img {
  float: left;
  width: 184px;
+ margin: 5px;
+}
+
+.actor img {
+  height: 184px;
 }
 
 .movie-show .movie h3, .actor-show .actor h3 {
