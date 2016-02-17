@@ -15,6 +15,12 @@
 //= require turbolinks
 //= require_tree .
 
+/*--------------------------------------*/
+/*         Home Page Annimation         */
+/*--------------------------------------*/
+
+
+
 var scene = null,
   mX = 0,
   mY = 0,
@@ -211,6 +217,14 @@ var Tile = function($id) {
 
   return _res;
 };
+
+
+/*--------------------------------------*/
+/*         Setting Movie Pages          */
+/*--------------------------------------*/
+
+
+
 
 function adjustScene() {
   if (mX == 0) return;
