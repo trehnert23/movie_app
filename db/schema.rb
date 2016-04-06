@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160205141149) do
 
-  create_table "actors", force: true do |t|
+  create_table "actors", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "image"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160205141149) do
     t.datetime "updated_at"
   end
 
-  create_table "comments", force: true do |t|
+  create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.integer  "movie_id"
     t.datetime "created_at"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160205141149) do
 
   add_index "comments", ["movie_id"], name: "index_comments_on_movie_id"
 
-  create_table "movies", force: true do |t|
+  create_table "movies", force: :cascade do |t|
     t.string   "title"
     t.string   "image"
     t.string   "release_year"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20160205141149) do
     t.datetime "updated_at"
   end
 
-  create_table "parts", force: true do |t|
+  create_table "parts", force: :cascade do |t|
     t.integer  "movie_id"
     t.integer  "actor_id"
     t.datetime "created_at"

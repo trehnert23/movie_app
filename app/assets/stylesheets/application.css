@@ -258,15 +258,6 @@ h3 a {
  font-family: Dosis;
 }
 
-.actor {
- display: block;
- float: left;
- margin: 0 10px 100px 0;
- width: 184px;
- height: 200px;
- font-family: Dosis;
-}
-
 .movie img, .actor img {
  width: 100%;
 }
@@ -293,10 +284,6 @@ p.year {
  float: left;
  width: 184px;
  margin: 5px;
-}
-
-.actor img {
-  height: 184px;
 }
 
 .movie-show .movie h3, .actor-show .actor h3 {
@@ -401,4 +388,31 @@ p.year {
 
 .navbar_image {
   height: 30px;
+}
+
+/*Actor Page*/
+
+.actor-index {
+  background-color: black;
+  margin-top: -5%;
+}
+
+.main .actors_header {
+  text-align: center;
+  font-size: 80px;
+  font-family: Dosis;
+  color: white;
+}
+
+.actor {
+ display: block;
+ float: left;
+ margin: 0 10px 100px 0;
+ width: 200px;
+ height: 200px;
+ font-family: Dosis;
+}
+
+.actor img {
+  height: 184px;
 }
