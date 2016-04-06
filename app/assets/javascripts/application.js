@@ -194,7 +194,7 @@ var Tile = function($id) {
   }
   else if (bground<=25 && bground>20){
   	$(_res.el).find('figure').css({
-  	    'background-image': 'url("http://www.theshiznit.co.uk/media/2015/January/truth2015/imitation-game-large.jpg")'
+  	    'background-image': 'url("http://ia.media-imdb.com/images/M/MV5BNDkwNTEyMzkzNl5BMl5BanBnXkFtZTgwNTAwNzk3MjE@._V1_SX640_SY720_.jpg")'
   	  });
   }
   else if (bground<=20 && bground>15){
